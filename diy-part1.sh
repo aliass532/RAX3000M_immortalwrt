@@ -17,5 +17,6 @@
 echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages" >> feeds.conf.default
 echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
 git clone https://github.com/aliass532/luci-app-eqos package/eqos
+sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
