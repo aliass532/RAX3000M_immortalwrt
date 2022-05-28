@@ -18,5 +18,7 @@ echo "src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packa
 echo "src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci" >> feeds.conf.default
 git clone https://github.com/aliass532/luci-app-eqos package/eqos
 sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
+sed -i 's/LINUX_VERSION-5.4 = .*$/LINUX_VERSION-5.10 = .117/g' include/kernel-version.mk
+sed -i 's/LINUX_KERNEL_HASH-5.4.*$/LINUX_KERNEL_HASH-5.10.117 = 703ef7112cdf889950dd864ba482d04bd87d83d3df3a98ab8d4ba8a7ab1ddcc7/g' include/kernel-version.mk
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
