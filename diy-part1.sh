@@ -20,6 +20,7 @@ sed -i 's/192.168.6.1/192.168.1.1/g' package/base-files/files/bin/config_generat
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 echo >> feeds.conf.default
 echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
+echo 'src-git mt5700webui https://github.com/aliass532/mt5700webui-openwrt-server.git;main' >> feeds.conf.default
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
