@@ -110,11 +110,11 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         # Update and install the feed packages
-        ./scripts/feeds update qmodem
-        ./scripts/feeds install -a -p qmodem
+        #./scripts/feeds update qmodem
+        #./scripts/feeds install -a -p qmodem
 
         # (Optional) Force install to overwrite existing drivers/apps
-        ./scripts/feeds install -a -f -p qmodem
+        #./scripts/feeds install -a -f -p qmodem
         go version
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
